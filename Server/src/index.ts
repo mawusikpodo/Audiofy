@@ -26,6 +26,19 @@ app.use("/playlist", playlistRouter);
 app.use("/profile", profileRouter);
 app.use("/history", historyRouter);
 
+app.get("/", (req, res) => {
+    res.json({
+        alive: true,
+    })
+})
+
+app.get("*", (req, res) => {
+    res.status(404).json({
+        error: "Not Found",
+    })
+})
+
+
 const PORT = process.env.PORT || 8989;
 
 // Swagger Documentation

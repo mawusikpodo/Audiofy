@@ -1,4 +1,3 @@
-# Audiofy
 ![Audiofy](./logo.png?raw=true)
 
 ## Project Name
@@ -67,7 +66,7 @@ Visit `http://localhost:3000` to access the API.
 
 ## Usage
 
-To use Audiofy, follow the API documentation available [here](https://your-audiofy-deployed-site.com/api-docs).
+To use Audiofy, follow the API documentation available [here](https://documenter.getpostman.com/view/31384856/2s9Ykn9Mjq).
 
 ## Contributing
 
@@ -79,7 +78,6 @@ We welcome contributions! If you'd like to contribute to Audiofy, please follow 
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Submit a pull request.
 
-Please review our [Contribution Guidelines](CONTRIBUTING.md) for more details.
 
 ## Related Projects
 

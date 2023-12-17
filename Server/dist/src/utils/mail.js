@@ -46,12 +46,12 @@ const sendVerificationMail = (token, profile) => __awaiter(void 0, void 0, void 
         attachments: [
             {
                 filename: "logo.png",
-                path: path_1.default.join(__dirname, "../mail/logo.png"),
+                path: path_1.default.join(__dirname, "../mail/images/logo.png"),
                 cid: "logo",
             },
             {
                 filename: "welcome.svg",
-                path: path_1.default.join(__dirname, "../mail/welcome.svg"),
+                path: path_1.default.join(__dirname, "../mail/images/welcome.svg"),
                 cid: "welcome",
             },
         ],
@@ -78,12 +78,12 @@ const sendForgetPasswordLink = (options) => __awaiter(void 0, void 0, void 0, fu
         attachments: [
             {
                 filename: "logo.png",
-                path: path_1.default.join(__dirname, "../mail/logo.png"),
+                path: path_1.default.join(__dirname, "../mail/images/logo.png"),
                 cid: "logo",
             },
             {
                 filename: "password.svg",
-                path: path_1.default.join(__dirname, "../mail/password.svg"),
+                path: path_1.default.join(__dirname, "../mail/images/password.svg"),
                 cid: "password",
             },
         ],
@@ -109,12 +109,12 @@ const sendPassResetSuccessEmail = (name, email) => __awaiter(void 0, void 0, voi
         attachments: [
             {
                 filename: "logo.png",
-                path: path_1.default.join(__dirname, "../mail/logo.png"),
+                path: path_1.default.join(__dirname, "../mail/images/logo.png"),
                 cid: "logo",
             },
             {
                 filename: "success.svg",
-                path: path_1.default.join(__dirname, "../mail/success.svg"),
+                path: path_1.default.join(__dirname, "../mail/images/success.svg"),
                 cid: "success",
             },
         ],

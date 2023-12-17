@@ -24,6 +24,10 @@ const passwordResetToken_1 = __importDefault(require("../models/passwordResetTok
 const cloud_1 = __importDefault(require("../cloud"));
 const create = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { email, password, name } = req.body;
+    const existingUser = yield user_1.default.findOne({ email });
+    if (existingUser) {
+        return res.status(400).json({ error: 'User with this email already exists' });
+    }
     const user = yield user_1.default.create({ name, email, password });
     const token = (0, helper_1.generateToken)();
     yield emailVerification_1.default.create({

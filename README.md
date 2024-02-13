@@ -2,11 +2,11 @@
 
 ## Project Name
 
-Audiofy - An API for sharing audio files between users.
+Audiofy - An app for sharing audio files between users.
 
 ## Introduction
 
-Audiofy is a Node.js-based API built with Express.js, MongoDB, and Cloudinary. It allows users to share audio files seamlessly. This README provides essential information to get you started.
+Audiofy is a Node.js-based app built with Express.js, MongoDB, Cloudinary and React Native. It allows users to share audio files seamlessly. This README provides essential information to get you started.
 
 ### Landing Page
 
@@ -14,7 +14,7 @@ Visit the [Landing Page](https://audiofy-landing.vercel.app/)
 
 ### Final Project Blog Article
 
-Read about the project on our [Final Project Blog Article](https://link-to-your-final-project-blog-article.com)
+Read about the project on our [Final Project Blog Article](https://x.com/mawusikpodo/status/1736827725971664948?s=20)
 
 ### Author 
 

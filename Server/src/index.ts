@@ -1,5 +1,6 @@
 import express from 'express'
 import 'dotenv/config'
+import "express-async-errors"
 import './db'
 
 import authRouter from './routers/auth'
@@ -10,6 +11,7 @@ import profileRouter from './routers/profile'
 import historyRouter from './routers/history'
 import "./utils/schedule"
 import swaggerDocs from './utils/swagger'
+import { errorHandler } from './middleware/error'
 
 const app = express();
 
@@ -26,6 +28,7 @@ app.use("/playlist", playlistRouter);
 app.use("/profile", profileRouter);
 app.use("/history", historyRouter);
 
+
 app.get("/", (req, res) => {
     res.json({
         alive: true,
@@ -38,6 +41,7 @@ app.get("*", (req, res) => {
     })
 })
 
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 8989;
 
